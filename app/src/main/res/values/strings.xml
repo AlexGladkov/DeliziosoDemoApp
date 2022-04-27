@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Delizioso</string>
+    <string name="sign_in_title">Login</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="forgot_title">Forgot?</string>
+    <string name="sign_in_subtitle">Don\'t have an account?</string>
+    <string name="sign_up_subtitle">Already has account?</string>
+    <string name="forgot_subtitle">We are so sorry!</string>
+    <string name="sign_in_action">Sign Up!</string>
+    <string name="sign_up_action">Sign In!</string>
+    <string name="email_hint">Email address</string>
+</resources>
