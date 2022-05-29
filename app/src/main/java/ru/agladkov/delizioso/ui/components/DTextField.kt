@@ -10,6 +10,8 @@ import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -20,11 +22,14 @@ fun DTextField(
     modifier: Modifier = Modifier,
     value: String,
     placeholder: String,
+    enabled: Boolean = true,
+    secureText: Boolean = false,
     onValueChange: (String) -> Unit
 ) {
     TextField(
         modifier = modifier,
         value = value,
+        enabled = enabled,
         placeholder = {
             Text(
                 modifier = Modifier.padding(start = 9.22.dp),
@@ -44,6 +49,8 @@ fun DTextField(
             focusedIndicatorColor = AppTheme.colors.primaryBackground,
             unfocusedIndicatorColor = AppTheme.colors.primaryBackground
         ),
+        visualTransformation = if (secureText) PasswordVisualTransformation() else
+            VisualTransformation.None,
         onValueChange = onValueChange
     )
 }

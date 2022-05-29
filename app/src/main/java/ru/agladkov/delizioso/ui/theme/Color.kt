@@ -14,6 +14,8 @@ data class Colors(
     val accentColor: Color,
     val notificationColor: Color,
     val actionTextColor: Color,
+    val borderColor: Color,
+    val hiddenColor: Color,
 )
 
 val lightPalette = Colors(
@@ -27,5 +29,7 @@ val lightPalette = Colors(
     hintTextColor = Color(0xFFA0978C),
     accentColor = Color(0xFF8AEAFF),
     notificationColor = Color(0xFFFF3838),
-    actionTextColor = Color(0xFF0094FF)
+    actionTextColor = Color(0xFF0094FF),
+    borderColor = Color(0xFFDCD4CB),
+    hiddenColor = Color(0xFFC7BFB6)
 )

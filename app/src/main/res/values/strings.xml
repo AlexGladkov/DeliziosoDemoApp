@@ -2,6 +2,7 @@
     <string name="app_name">Delizioso</string>
     <string name="sign_in_title">Login</string>
     <string name="sign_up_title">Sign Up</string>
+    <string name="sign_in_forget">Forget Password?</string>
     <string name="forgot_title">Forgot?</string>
     <string name="sign_in_subtitle">Don\'t have an account?</string>
     <string name="sign_up_subtitle">Already has account?</string>
@@ -9,4 +10,8 @@
     <string name="sign_in_action">Sign Up!</string>
     <string name="sign_up_action">Sign In!</string>
     <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_check_title">Remember me</string>
+    <string name="action_login">Log in</string>
+    <string name="copyright_bottom">Copyright © 2022 Alex Gladkov</string>
 </resources>

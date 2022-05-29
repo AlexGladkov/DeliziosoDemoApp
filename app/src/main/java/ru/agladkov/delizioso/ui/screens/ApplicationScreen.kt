@@ -19,7 +19,10 @@ fun ApplicationScreen() {
         composable(NavigationTree.Splash.name) { SplashScreen(navController) }
         composable(NavigationTree.Login.name) {
             val loginViewModel = hiltViewModel<LoginViewModel>()
-            LoginScreen(loginViewModel = loginViewModel)
+            LoginScreen(loginViewModel = loginViewModel, navController = navController)
+        }
+        composable("${NavigationTree.Main.name}/{username}") { backStackEntry ->
+            MainScreen(backStackEntry.arguments?.getString("username").orEmpty())
         }
     }
 }
